@@ -13,9 +13,9 @@
 2. **Graph-guided Reasoning Preferences.** Positive reasoning chains follow the logic graph; negative chains are constructed through five perturbations: **Delete, Swap, Inject, Relation Flip, and Behavior Replacement**.
 3. **Two-stage Preference Alignment.** Supervised fine-tuning (SFT) on FLBE adapts the model to livestock scenes; Direct Preference Optimization (DPO) then encourages behavior-consistent explanations over inconsistent reasoning chains.
 
-![Simplified overview of LiveReasoner](figs/framework.svg)
+![Simplified overview of LiveReasoner](figs/framework.png)
 
-*Simplified schematic of the LiveReasoner pipeline. See Figure 2 of the paper for the original detailed framework.*
+*Figure 2. Overview of the LiveReasoner framework (from the manuscript).*
 
 ---
 
@@ -51,15 +51,15 @@ The manuscript also evaluates generated explanations using **GPT-5 Rating** and 
 
 ## 🎯 Qualitative Results
 
-The following visual summaries highlight the evidence-grounding and exclusion strategies discussed in the manuscript's pig and cow case studies. **These are concise textual schematics, not the original photographic case-study figures.**
+The following case studies (Figures 10 and 11 from the manuscript) illustrate the evidence-grounding and exclusion strategies in livestock behavior explanations.
 
 **Pig behavior:** The adapted model uses more specific interaction cues and excludes competing explanations.
 
-![Pig reasoning comparison](figs/pig_case_study.svg)
+![Pig reasoning comparison](figs/pig_case_study.png)
 
 **Cow feeding:** The adapted model verifies feeding using mouth–forage contact rather than relying only on feeding-stall context.
 
-![Cow reasoning comparison](figs/cow_case_study.svg)
+![Cow reasoning comparison](figs/cow_case_study.png)
 
 ---
 
